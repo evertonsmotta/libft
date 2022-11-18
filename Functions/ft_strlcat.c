@@ -6,20 +6,16 @@
 /*   By: evdos-sa <evdos-sa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/02 12:57:17 by evdos-sa          #+#    #+#             */
-/*   Updated: 2022/11/13 11:02:27 by evdos-sa         ###   ########.fr       */
+/*   Updated: 2022/11/18 20:58:51 by evdos-sa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*************************************************************************
 FUNCTION NOT OK !!!!
 *************************************************************************/
+#include "libft.h"
+
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
-/*	size_t é garantido que seja grande o suficiente para conter o tamanho do 
-maior objeto que o sistema host pode manipular. O tipo de dados size_t 
-nunca é negativo. Quando usamos um objeto size_t , temos que ter certeza de que 
-em todos os contextos em que é usado, incluindo aritmética, queremos apenas 
-valores não negativos.
-*/
 {
 	size_t	i;
 	size_t	j;
@@ -45,38 +41,6 @@ valores não negativos.
 	return (i + j);
 }
 /*
-size_t	ft_strlcat(char *dst, const char *src, size_t size)*/
-/*	size_t é garantido que seja grande o suficiente para conter o tamanho do 
-maior objeto que o sistema host pode manipular. O tipo de dados size_t 
-nunca é negativo. Quando usamos um objeto size_t , temos que ter certeza de que 
-em todos os contextos em que é usado, incluindo aritmética, queremos apenas 
-valores não negativos.
-*/
-/*{
-	size_t	i;
-	size_t	j;
-	size_t	k;
-
-    i = 0;
-	j = 0;
-	k = 0;
-	while(dst[i] != '\0')
-        i++;
-    while(src[j] != '\0')
-        j++;
-    if(size == 0)
-        return (j);
-    while(size <=i && size > 0)
-        return(j + size);
-    while (src[k] != '\0' && k < size - i - 1)
-    {
-        dst[i + k] = src[k];
-        k++;
-    }
-    dst[i + j] = '\0';
-    return (i + j);
-}
-
 #include <string.h>
 #include <stdio.h>
 

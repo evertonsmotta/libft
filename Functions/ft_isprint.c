@@ -6,24 +6,17 @@
 /*   By: evdos-sa <evdos-sa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/02 12:55:21 by evdos-sa          #+#    #+#             */
-/*   Updated: 2022/11/12 13:01:08 by evdos-sa         ###   ########.fr       */
+/*   Updated: 2022/11/18 20:22:08 by evdos-sa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-Function: ft_isprint
-Header FIle: <ctype.h>
-Functionality: Checks whether a character is a printable character or not.
-Return: =! ZERO if arg is printable.
-	ZERO if arg is not printable.
-Prototype: int    isprint(int c)
-Observation: Even though, isprint() takes integer as an argument, character is passed to the function. Internally, the character is converted to its ASCII value for the check.
-****************************************************************************/
+#include "libft.h"
 
 int	ft_isprint(int c)
 {
-    if (c >= 32 && c <= 126)
-        return (1);
-    return (0);
+	if (c >= 32 && c <= 126)
+		return (1);
+	return (0);
 }
 /*
 #include <stdio.h>

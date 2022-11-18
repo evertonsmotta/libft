@@ -6,14 +6,13 @@
 /*   By: evdos-sa <evdos-sa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/02 12:57:46 by evdos-sa          #+#    #+#             */
-/*   Updated: 2022/11/05 13:22:08 by evdos-sa         ###   ########.fr       */
+/*   Updated: 2022/11/18 21:04:14 by evdos-sa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/**************************************************************************
-TIRADO DA PISCINE. C03EX01
-**************************************************************************/
-int ft_strncmp(const char *s1, const char *s2, size_t n)
+#include "libft.h"
+
+int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
 	unsigned int	i;
 

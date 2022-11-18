@@ -6,19 +6,12 @@
 /*   By: evdos-sa <evdos-sa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/02 12:51:57 by evdos-sa          #+#    #+#             */
-/*   Updated: 2022/11/12 12:58:47 by evdos-sa         ###   ########.fr       */
+/*   Updated: 2022/11/18 20:21:55 by evdos-sa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//Function: ft_isalnum
-//Header FIle: <ctype.h>
-//Functionality: The isalnum() function checks whether the argument passed is 
-//an alphanumeric character (alphabet or number) or not.
-//Return: 1 IF argument is an alphanumeric character.
-//	ZERO IF argument is neither an alphanumeric character.
-//Prototype: int isalnum(int argument)
-//Observation: The argument (character) received will be converted to an 
-//integer, according to the ASCII table.
+#include "libft.h"
+
 int	ft_isalnum(int c)
 {
 	if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z')
