@@ -6,7 +6,7 @@
 /*   By: evdos-sa <evdos-sa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/02 12:57:35 by evdos-sa          #+#    #+#             */
-/*   Updated: 2022/11/18 21:02:45 by evdos-sa         ###   ########.fr       */
+/*   Updated: 2024/07/18 13:51:06 by evdos-sa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ size_t	ft_strlen(const char *str)
 	size_t	i;
 
 	i = 0;
-	while (str[i])
+	while (str && str[i])
 	{
 		i++;
 	}
